@@ -21,7 +21,7 @@ const TodoList = () => {
     }
   };
 
-  // Agregar tarea
+  
   const addTask = async (tecla) => {
     if (tecla.key === "Enter" && newTask.trim()) {
       try {
@@ -46,7 +46,7 @@ const TodoList = () => {
     }
   };
 
-  // Eliminar tarea
+  
   const removeTask = async (id) => {
     try {
       const url = `https://playground.4geeks.com/todo/todos/${id}`;
@@ -65,7 +65,7 @@ const TodoList = () => {
     }
   };
 
-  // Usar useEffect para cargar tareas cuando se monta el componente
+  
   useEffect(() => {
     getTodos();
   }, []);
