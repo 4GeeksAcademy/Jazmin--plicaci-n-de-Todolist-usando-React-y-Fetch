@@ -7,12 +7,13 @@ import "bootstrap"
 
 // index.css'
 import '../styles/index.css'
+import App from './components/App';
 
-// components
-import Home from './components/Home';
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+  <App/>
   </React.StrictMode>,
 )
